@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Rokaya | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header with Navigation and Profile Image -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <img class="profile-img-nav" src="profile.jpg" alt="Rudra Rokaya Profile">
+        <h1>Rudra Rokaya</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Turning Data into Insights</h2>
+      <p>Welcome to my data analyst portfolio. Explore my case studies and see how I transform data into actionable insights.</p>
+      <button onclick="scrollToSection('case-studies')">View My Work</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>I’m a passionate data analyst with experience in transforming raw data into actionable insights. I love using Python, SQL, and data visualization tools to uncover trends and tell stories with data.</p>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Data Visualization</li>
+          <li>Excel</li>
+          <li>Tableau</li>
+        </ul>
+      </div>
+      <div class="timeline">
+        <!-- Timeline Item 1 (Left) -->
+        <div class="timeline-item left">
+          <div class="content">
+            <span class="date">July 2020 – Nov 2022</span>
+            <h3>Mid-level Android Developer</h3>
+            <h4>Prologic Solutions, Kathmandu, Nepal</h4>
+            <ul>
+              <li>Developed 10+ Android applications using Java and Kotlin, focusing on performance, scalability, and user experience.</li>
+              <li>
+                <strong>Key Projects:</strong>
+                <ul>
+                  <li><em>Asset Management:</em> Financial tracking app for personal finance management, expense tracking, and report generation.</li>
+                  <li><em>Sahitya Post App:</em> Multilingual digital library app with over 500+ downloads, featuring personalized book recommendations.</li>
+                  <li><em>MusicBazar:</em> Media player app with over 1K+ downloads featuring playback control, playlist management, and video speed management.</li>
+                  <li><em>Little India Restaurant:</em> Food-ordering app with a detailed menu, customization options, and real-time order tracking.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2 (Right) -->
+        <div class="timeline-item right">
+          <div class="content">
+            <span class="date">Sep 2023 – Present</span>
+            <h3>Assistant In Nursing</h3>
+            <h4>St. Vincent’s Care Services, Middle Ridge, Toowoomba</h4>
+            <ul>
+              <li>Provided personal hygiene assistance, companionship, and emotional support.</li>
+              <li>Monitored health daily and maintained proper documentation.</li>
+              <li>Ensured safety and emergency support (with First Aid certification) and obtained CHCAGE011 Certification on Dementia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section id="case-studies">
+    <h2>Case Studies</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Project Title 1</h3>
+        <p>A brief overview of the project and the insights derived from the data.</p>
+        <button onclick="alert('More details coming soon!')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Project Title 2</h3>
+        <p>A brief overview of the project and the insights derived from the data.</p>
+        <button onclick="alert('More details coming soon!')">Learn More</button>
+      </div>
+      <!-- More cards as needed -->
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my resume to see a summary of my work experience, education, and skills.</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Rudra Rokaya</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
