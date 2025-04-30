@@ -3,7 +3,7 @@
 This is my personal portfolio website showcasing who I am, my skills, and the projects I've worked on. It is built using HTML, CSS, JavaScript, and hosted for free using [Cloudflare Pages](https://pages.cloudflare.com).
 
 ## 📌 Live Website
-🌐 [www.rudra-rokaya.com.np](https://www.rudra-rokaya.com.np)
+🌐 [Visit my portfolio](https://www.rudra-rokaya.com.np)
 
 ## 🧑‍💼 About Me
 I'm Rudra Rokaya, a data analyst with a passion for data, problem-solving, and transforming raw numbers into meaningful insights. My portfolio showcases the tools and projects that reflect my skills and learning journey
