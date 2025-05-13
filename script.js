@@ -92,14 +92,14 @@ fadeElements.forEach(element => {
 });
 
 // Contact Form
-const contactForm = document.getElementById('contactForm');
+/*const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Here you would typically handle the form submission with AJAX
     alert('Thank you for your message! I will get back to you soon.');
     contactForm.reset();
-});
+}); */
 
 // Dark Mode Toggle
 const themeSwitch = document.querySelector('.theme-switch');
