@@ -27,7 +27,7 @@ const skillsChart = new Chart(ctx, {
         labels: ['SQL', 'Python', 'R', 'Data Visualization', 'Statistical Analysis', 'Machine Learning', 'Excel', 'Power BI'],
         datasets: [{
             label: 'Skill Level',
-            data: [70, 65, 65, 75, 55, 70, 75, 55],
+            data: [70, 65, 65, 75, 75, 70, 75, 75],
             backgroundColor: 'rgba(4, 102, 200, 0.2)',
             borderColor: 'rgba(4, 102, 200, 1)',
             borderWidth: 2,
