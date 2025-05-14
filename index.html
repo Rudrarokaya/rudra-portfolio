@@ -30,6 +30,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
+    <div id="notification" class="notification"></div>
     <!-- Header -->
     <header>
         <div class="container">
@@ -55,10 +56,10 @@
             <div class="hero-content fade-in">
                 <h1>Data Analyst & Insights Specialist</h1>
                 <p>Transforming data into meaningful insights and actionable strategies</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-                <a href="rudra-rokaya-resume.pdf" class="btn" download style = "margin-left: 1rem;">
-                  Download Resume
-                </a>
+                <div class="btn-group">
+                  <a href="#contact" class="btn">Get In Touch</a>
+                  <a href="rudra-rokaya-resume.pdf" class="btn" download>Download Resume</a>
+                </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/rudra-rokaya" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Rudrarokaya" target="_blank"><i class="fab fa-github"></i></a>
@@ -87,12 +88,15 @@
                         <h3>Technical Skills</h3>
                         <div class="skills-list">
                             <span class="skill-tag delay-1"><b>SQL</b></span>
-                            <span class="skill-tag delay-2"><b>Python(Pandas, NumPy, Matplotlib, Scikit-learn) </b></span>
+                            <span class="skill-tag delay-2"><b>Python </b></span>
                             <span class="skill-tag delay-3"><b>R</b></span>
                             <span class="skill-tag"><b>Tableau</b></span>
                             <span class="skill-tag"><b>Power BI</b></span>
-                            <span class="skill-tag"><b>Excel / Google Spreadsheet</b></span>
-                            <span class="skill-tag"><b> Git, Github, & GitLab </b></span>
+                            <span class="skill-tag"><b>Excel </b></span>
+                            <span class="skill-tag"><b>Google Sheets</b></span>
+                            <span class="skill-tag"><b> Git </b></span>
+                            <span class="skill-tag"><b> GitLab </b></span>
+                            <span class="skill-tag"><b>GitHub</b></span>
                             <span class="skill-tag"> <b>Statistical Analysis</b></span>
                             <span class="skill-tag"><b>Machine Learning</b></span>
                             <span class="skill-tag"><b>Data Cleaning & Visualization</b></span>
@@ -340,7 +344,7 @@
         <div class="container">
             <h2 class="section-title fade-in">Get In Touch</h2>
             <div class="contact-form fade-in">
-                <form id="contactForm" action="https://formspree.io/f/mnndonbg" method="POST">
+                <form id="contactForm">
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
@@ -354,7 +358,6 @@
                         <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
                     </div>
 
-                    <input type="hidden" name="_next" value="https://www.rudra-rokaya.com.np/thank-you.html">
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>

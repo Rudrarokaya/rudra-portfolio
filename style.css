@@ -648,3 +648,31 @@ h1, h2, h3, h4 {
 .hidden {
     display: none !important;
 }
+
+/* Hero button-group overrides*/
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-group .btn {
+    flex: none;
+    width: auto !important;
+    margin: 0;
+}
+
+/* Notification toast */
+.notification {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  display: none;
+  z-index: 9999;
+}
