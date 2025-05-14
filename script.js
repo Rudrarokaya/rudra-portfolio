@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body: new FormData(form)
     })
     .then(res => {
-      const msg = res.ok ? 'Message sent successfully!' : 'Error sending message.';
+      const msg = res.ok ? 'Thank you! Your message has been received. I will get back to you shortly.' : 'There was an eror sending your message. Please try again later.';
       notification.textContent = msg;
       notification.style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });

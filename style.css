@@ -676,3 +676,11 @@ h1, h2, h3, h4 {
   display: none;
   z-index: 9999;
 }
+
+/* Ensure hero content sits below fixed header on mobile */
+@media (max-width: 768px) {
+  .hero {
+    /* match or exceed your header height */
+    padding-top: 8rem !important;
+  }
+}
