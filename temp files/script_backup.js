@@ -26,9 +26,9 @@ const skillsChart = new Chart(ctx, {
       'Python',
       'Excel',
       'Power BI / Tableau',
-      'Problem Solving',
+      'Exploratory Data Analysis (EDA)',
       'Statistical Analysis',
-      'Analytical Thinking'
+      'Data Storytelling'
     ],
     datasets: [{
       label: 'Skill Level',
@@ -59,42 +59,41 @@ const skillsChart = new Chart(ctx, {
 
 function updateChartTheme() {
   const isDark = document.body.classList.contains('dark-mode');
-  const color = isDark ? '#fff' : '#000';
-  const gridColor = isDark ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)';
-  skillsChart.options.scales.r.pointLabels.color = color;
-  skillsChart.options.scales.r.grid.color = gridColor;
-  skillsChart.options.scales.r.angleLines.color = gridColor;
+  skillsChart.options.scales.r.pointLabels.color = isDark ? '#fff' : '#000';
+  skillsChart.options.scales.r.grid.color = isDark ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)';
+  skillsChart.options.scales.r.angleLines.color = isDark ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)';
   skillsChart.update();
 }
 updateChartTheme();
 
 // Scroll Animation
 const fadeElements = document.querySelectorAll('.fade-in');
-if (fadeElements.length) {
-  const fadeInObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('appear');
-        fadeInObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  fadeElements.forEach(el => fadeInObserver.observe(el));
-}
+const fadeInObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appear');
+      fadeInObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+fadeElements.forEach(el => fadeInObserver.observe(el));
 
 // Dark Mode Toggle & Persist
 const themeSwitch = document.querySelector('.theme-switch');
 const themeIcon = themeSwitch.querySelector('i');
-function setTheme(dark) {
-  document.body.classList.toggle('dark-mode', dark);
-  themeIcon.classList.replace(dark ? 'fa-moon' : 'fa-sun', dark ? 'fa-sun' : 'fa-moon');
+themeSwitch.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const dark = document.body.classList.contains('dark-mode');
+  themeIcon.classList.toggle('fa-moon', !dark);
+  themeIcon.classList.toggle('fa-sun', dark);
   localStorage.setItem('theme', dark ? 'dark' : 'light');
   updateChartTheme();
-}
-themeSwitch.addEventListener('click', () => {
-  setTheme(!document.body.classList.contains('dark-mode'));
 });
-if (localStorage.getItem('theme') === 'dark') setTheme(true);
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeIcon.classList.replace('fa-moon','fa-sun');
+  updateChartTheme();
+}
 
 // Scroll-to-top button
 const scrollTopBtn = document.getElementById("scrollTopBtn");
@@ -112,7 +111,6 @@ const postNameText = " - ";
 let typeIndex = 0, fullText = preNameText + nameText + postNameText;
 function typeIntro() {
   const target = document.getElementById("typed-intro");
-  if (!target) return;
   if (typeIndex <= fullText.length) {
     let current = fullText.slice(0, typeIndex);
     if (typeIndex <= preNameText.length) {
@@ -126,36 +124,32 @@ function typeIntro() {
     setTimeout(typeIntro, 40);
   }
 }
+document.addEventListener("DOMContentLoaded", () => setTimeout(typeIntro, 400));
 
-// Combine DOMContentLoaded events
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(typeIntro, 400);
-
-  // AJAX form submission and notification
+// AJAX form submission and notification
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const notification = document.getElementById('notification');
-  if (form && notification) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch('https://formspree.io/f/mnndonbg', {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(form)
-      })
-      .then(res => {
-        const msg = res.ok ? 'Thank you! Your message has been received.' : 'Try again.';
-        notification.textContent = msg;
-        notification.style.display = 'block';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setTimeout(() => { notification.style.display = 'none'; }, 5000);
-        if (res.ok) form.reset();
-      })
-      .catch(() => {
-        notification.textContent = 'Error sending message.';
-        notification.style.display = 'block';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setTimeout(() => { notification.style.display = 'none'; }, 5000);
-      });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch('https://formspree.io/f/mnndonbg', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+    .then(res => {
+      const msg = res.ok ? 'Thank you! Your message has been received.' : 'Try again.';
+      notification.textContent = msg;
+      notification.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => { notification.style.display = 'none'; }, 5000);
+      if (res.ok) form.reset();
+    })
+    .catch(() => {
+      notification.textContent = 'Error sending message.';
+      notification.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => { notification.style.display = 'none'; }, 5000);
     });
-  }
+  });
 });
