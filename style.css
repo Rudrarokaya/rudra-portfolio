@@ -652,3 +652,12 @@ body.dark-mode .project-tag {
 @media (max-width: 576px) {
   .cert-images { grid-template-columns: 1fr; }
 }
+
+/* =========================
+   Always show skills-list inside timeline-content
+   ========================= */
+   .timeline-content .skills-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 1rem;
+   }
