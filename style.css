@@ -203,7 +203,7 @@ nav {
 
 
 .about-image img {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -683,4 +683,94 @@ h1, h2, h3, h4 {
     /* match or exceed your header height */
     padding-top: 8rem !important;
   }
+}
+
+/* Certifications image grid: 3 columns, then 2 rows */
+.cert-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+
+.cert-images img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.cert-images img:hover {
+  transform: scale(1.2);
+  z-index: 2; /* ensure the image sits above the caption during hover */
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .cert-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 576px) {
+  .cert-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Center each certificate image and its caption */
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;       /* ensure stacking context */
+}
+
+.cert-item figcaption {
+  position: relative;
+  z-index: 1;               /* bring caption above the image */
+  background-color: var(--bg-color);
+  padding: 0 0.5rem;        /* optional padding for readability */
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Placeholder box for certificates without an image */
+.cert-placeholder {
+  width: 280px;
+  height: 180px;
+  background-color: #f0f0f0;
+  border: 2px dashed var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Progress bar for in-progress certificates */
+.cert-item.in-progress .progress-bar {
+  width: 280px;              /* match your thumbnail width */
+  height: 8px;
+  background-color: var(--light-accent);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.cert-item.in-progress .progress-bar .progress {
+  height: 100%;
+  background-color: var(--primary-color);
+  width: 75%;               /* 6 of 8 courses completed */
+  transition: width 0.5s ease;
 }

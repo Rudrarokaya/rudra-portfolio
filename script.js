@@ -21,10 +21,18 @@ const ctx = document.getElementById('skills-chart').getContext('2d');
 const skillsChart = new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: ['SQL', 'Python', 'R', 'Data Visualization', 'Statistical Analysis', 'Machine Learning', 'Excel', 'Power BI'],
+    labels: [
+      'SQL', 
+      'Pyhton',
+      'Excel',
+      'Power BI / Tableau',
+      'Exploratory Data Analysis (EDA)',
+      'Statistical Analysis',
+      'Data Storytelling'
+    ],
     datasets: [{
       label: 'Skill Level',
-      data: [70, 65, 65, 75, 75, 70, 75, 75],
+      data: [85, 80, 85, 75, 85, 80, 75, 80],
       backgroundColor: 'rgba(4, 102, 200, 0.2)',
       borderColor: 'rgba(4, 102, 200, 1)',
       borderWidth: 2,
@@ -99,7 +107,7 @@ scrollTopBtn.addEventListener("click", () => {
 // Typing animation for About section
 const preNameText = "Hello! I'm ";
 const nameText = "Rudra Rokaya";
-const postNameText = " - a data analyst and software engineer passionate about uncovering insights from complex datasets.";
+const postNameText = " - ";
 let typeIndex = 0, fullText = preNameText + nameText + postNameText;
 function typeIntro() {
   const target = document.getElementById("typed-intro");
@@ -130,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body: new FormData(form)
     })
     .then(res => {
-      const msg = res.ok ? 'Thank you! Your message has been received. I will get back to you shortly.' : 'There was an eror sending your message. Please try again later.';
+      const msg = res.ok ? 'Thank you! Your message has been received.' : 'Try again.';
       notification.textContent = msg;
       notification.style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
