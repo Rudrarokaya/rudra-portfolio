@@ -7,7 +7,7 @@
   <link rel="icon" href="images/rudra rokaya profile .png" type="image/png">
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore Rudra Rokaya’s portfolio featuring real-world data analytics projects, dashboards, and insights built with Python, SQL, Power BI, and Tableau.">
+  <meta name="description" content="Explore Rudra Rokaya's portfolio featuring real-world data analytics projects, dashboards, and insights built with Python, SQL, Power BI, and Tableau.">
   <meta name="keywords" content="Rudra Rokaya, Data Analyst Portfolio, Data Analytics Projects, Python, SQL, Power BI, Tableau, Business Intelligence, Dashboard Developer, Data Visualization">
   <meta name="author" content="Rudra Rokaya">
 
@@ -30,7 +30,6 @@
   <!-- Stylesheets & Scripts -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" defer></script>
   <script src="script.js" defer></script>
 
   <!-- Google Analytics -->
@@ -72,19 +71,39 @@
        Hero Section
        ========================= -->
   <section class="hero section" id="home">
+    <div class="hero-background">
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+    </div>
     <div class="container">
       <div class="hero-content fade-in">
-        <h1>Data Analyst &amp; Insights Specialist</h1>
-        <p>Driven by curiosity. Focused on insights. Powered by data.</p>
-        <div class="btn-group">
-          <a href="#contact" class="btn">Get In Touch</a>
-          <a href="pdf files/rudra rokaya resume.pdf" class="btn" download>Download Resume</a>
+        <h1 class="hero-title">Data Analyst &amp; Insights Specialist</h1>
+        <p class="hero-subtitle">Driven by curiosity. Focused on insights. Powered by data.</p>
+        <div class="hero-actions">
+          <div class="btn-group">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-comment-dots"></i>
+              <span>Get In Touch</span>
+            </a>
+            <a href="pdf files/rudra rokaya resume.pdf" class="btn btn-outline" download>
+              <i class="fas fa-file-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
         </div>
         <div class="social-links" aria-label="Social Links">
-          <a href="https://www.linkedin.com/in/rudra-rokaya" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Rudrarokaya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:rudra.rokaya77@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/rudra-rokaya" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Rudrarokaya" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.kaggle.com/xrudrarx" target="_blank" rel="noopener" aria-label="Kaggle" class="social-link">
+            <i class="fab fa-kaggle"></i>
+          </a>
+          <a href="mailto:rudra.rokaya77@gmail.com" target="_blank" rel="noopener" aria-label="Email" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -95,19 +114,57 @@
        ========================= -->
   <section class="section" id="about">
     <div class="container">
+      <div class="about-background">
+        <div class="accent-shape shape-1"></div>
+        <div class="accent-shape shape-2"></div>
+      </div>
+      
       <h2 class="section-title fade-in">About Me</h2>
       <div class="about-content">
-        <div class="about-image fade-in">
-          <img src="images/rudra rokaya profile .png" alt="Rudra Rokaya Profile Picture" class="profile-pic">
+        <div class="about-image-wrapper fade-in">
+          <div class="about-image">
+            <img src="images/rudra rokaya profile .png" alt="Rudra Rokaya Profile Picture" class="profile-pic">
+            <div class="image-backdrop"></div>
+          </div>
+
         </div>
-        <div class="about-text fade-in">
+
+        <div class="about-text-wrapper fade-in">
           <p>
             <span id="typed-intro" class="typewriter"></span>
-          a curious and adaptable data analyst with a background in software engineering.
+            a curious and adaptable data analyst with a background in software engineering.
           </p>
-          <p>
-            I have 3 years mobile development experience and a Master's in Data Science (Business Analytics). I enjoy exploring new ideas, asking better questions, and turning raw data into real-world impact. Always learning, always improving.
-          </p>
+
+          <div class="about-description">
+            <p>I have <span class="highlight-number">3</span>+ years mobile development experience and a Master's in Data Science (Business Analytics). I enjoy exploring new ideas, asking better questions, and turning raw data into real-world impact.</p>
+            <blockquote class="about-quote">
+              <p>Always learning, always improving.</p>
+            </blockquote>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item" data-count="10">
+              <div class="highlight-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <span class="highlight-number counter">10</span>
+              <span class="highlight-label">Projects Delivered</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <span class="highlight-number">MSc</span>
+              <span class="highlight-label">Data Science</span>
+            </div>
+            <div class="highlight-item" data-count="3">
+              <div class="highlight-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <span class="highlight-number counter">3</span>
+              <span class="highlight-label">Years Experience</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,21 +176,149 @@
   <section class="section" id="skills">
     <div class="container">
       <h2 class="section-title fade-in">My Skills</h2>
-      <div class="data-visual fade-in">
-        <canvas id="skills-chart" aria-label="Skills Radar Chart"></canvas>
+      
+      <!-- Desktop Skills Display -->
+      <div class="skills-container fade-in">
+        <!-- Technical Skills -->
+        <div class="skills-category">
+          <h3>Technical Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-table"></i>
+                <span class="skill-name">Excel</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-chart-bar"></i>
+                <span class="skill-name">Power BI</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-database"></i>
+                <span class="skill-name">SQL</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fab fa-python"></i>
+                <span class="skill-name">Python</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-chart-pie"></i>
+                <span class="skill-name">Tableau</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fab fa-r-project"></i>
+                <span class="skill-name">R Programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Core Competencies -->
+        <div class="skills-category">
+          <h3>Core Competencies</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-lightbulb"></i>
+                <span class="skill-name">Problem Solving</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-comments"></i>
+                <span class="skill-name">Communication</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-search"></i>
+                <span class="skill-name">Attention to Detail</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-brain"></i>
+                <span class="skill-name">Analytical Thinking</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-chart-line"></i>
+                <span class="skill-name">Data Visualization</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-cube"></i>
+                <span class="skill-name">Data Modeling</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-exchange-alt"></i>
+                <span class="skill-name">ETL Pipeline</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <i class="fas fa-book-open"></i>
+                <span class="skill-name">Data Story Telling</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      
       <!-- Mobile skills list fallback -->
-      <div class="skills-list fade-in" aria-label="Skills List">
-        <span class="skill-tag">EXCEL</span>
-        <span class="skill-tag">POWER BI</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">PYTHON</span>
-        <span class="skill-tag">Tableau</span>
-        <span class="skill-tag">PROBLEM-SOLVING</span>
-        <span class="skill-tag">COMMUNICATION</span>
-        <span class="skill-tag">ATTENTION TO DETAIL</span>
-        <span class="skill-tag">ANALYTICAL THINKING</span>
-        <span class="skill-tag">STORY TELLING</span>
+      <div class="skills-list-mobile fade-in" aria-label="Skills List">
+        <!-- Technical Skills -->
+        <div class="skills-category">
+          <h3>Technical Tools</h3>
+          <div class="skills-group">
+            <span class="skill-tag"><i class="fas fa-table"></i>EXCEL</span>
+            <span class="skill-tag"><i class="fas fa-chart-bar"></i>POWER BI</span>
+            <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
+            <span class="skill-tag"><i class="fab fa-python"></i>PYTHON</span>
+            <span class="skill-tag"><i class="fas fa-chart-pie"></i>TABLEAU</span>
+            <span class="skill-tag"><i class="fab fa-r-project"></i>R PROGRAMMING</span>
+          </div>
+        </div>
+        
+        <!-- Soft Skills -->
+        <div class="skills-category">
+          <h3>Core Competencies</h3>
+          <div class="skills-group">
+            <span class="skill-tag"><i class="fas fa-lightbulb"></i>PROBLEM-SOLVING</span>
+            <span class="skill-tag"><i class="fas fa-comments"></i>COMMUNICATION</span>
+            <span class="skill-tag"><i class="fas fa-search"></i>ATTENTION TO DETAIL</span>
+            <span class="skill-tag"><i class="fas fa-brain"></i>ANALYTICAL THINKING</span>
+            <span class="skill-tag"><i class="fas fa-chart-line"></i>DATA VISUALIZATION</span>
+            <span class="skill-tag"><i class="fas fa-cube"></i>DATA MODELING</span>
+            <span class="skill-tag"><i class="fas fa-exchange-alt"></i>ETL PIPELINE</span>
+            <span class="skill-tag"><i class="fas fa-book-open"></i>DATA STORY TELLING</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -141,64 +326,126 @@
   <!-- =========================
        Projects Section
        ========================= -->
-  <section class="section hidden" id="projects">
+  <section class="section" id="projects">
     <div class="container">
       <h2 class="section-title fade-in">Featured Projects</h2>
       <div class="projects-grid">
-        <!-- Project 1 -->
+        <!-- Project 1: Healthcare Analytics Capstone -->
         <div class="project-card fade-in delay-1">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Customer Segmentation Analysis Project">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Healthcare Analytics Project">
           </div>
           <div class="project-details">
             <div class="project-tags">
               <span class="project-tag">Python</span>
-              <span class="project-tag">Data Visualization</span>
-              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Excel</span>
+              <span class="project-tag">Predictive Analytics</span>
             </div>
-            <h3>Customer Segmentation Analysis</h3>
-            <p>Developed a customer segmentation model using K-means clustering to identify key customer groups for targeted marketing campaigns, resulting in a 15% increase in conversion rates.</p>
+            <h3>Rural Healthcare Access Analytics</h3>
+            <p>Developed a comprehensive analytics solution to identify healthcare service gaps in rural Queensland. Integrated 15+ public datasets for geospatial analysis and population health insights, enabling data-driven resource allocation decisions.</p>
             <div class="project-links">
               <a href="#" class="btn">View Details</a>
               <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
-        <!-- Project 2 -->
+
+        <!-- Project 2: Financial Analytics Dashboard -->
         <div class="project-card fade-in delay-2">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Sales Performance Dashboard Project">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Financial Analytics Dashboard">
           </div>
           <div class="project-details">
             <div class="project-tags">
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">Tableau</span>
-              <span class="project-tag">Data Analysis</span>
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ETL Pipeline</span>
             </div>
-            <h3>Sales Performance Dashboard</h3>
-            <p>Created an interactive sales dashboard providing real-time insights into performance metrics, regional sales trends, and product performance, enabling data-driven inventory and marketing decisions.</p>
+            <h3>Financial Market Analytics Dashboard</h3>
+            <p>Built an interactive financial analytics dashboard for TGM Capital using Power BI and custom ETL pipelines. Implemented time series forecasting and RBA event impact analysis to deliver investment strategy insights.</p>
             <div class="project-links">
               <a href="#" class="btn">View Details</a>
               <a href="#" target="_blank" rel="noopener" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
-        <!-- Project 3 -->
+
+        <!-- Project 3: Android Development Portfolio -->
         <div class="project-card fade-in delay-3">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Predictive Maintenance Model Project">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Android Development Projects">
           </div>
           <div class="project-details">
             <div class="project-tags">
-              <span class="project-tag">R</span>
-              <span class="project-tag">Statistical Analysis</span>
-              <span class="project-tag">Data Cleaning</span>
+              <span class="project-tag">Android</span>
+              <span class="project-tag">Kotlin</span>
+              <span class="project-tag">MVVM</span>
             </div>
-            <h3>Predictive Maintenance Model</h3>
-            <p>Developed a predictive maintenance model using time series analysis to forecast equipment failures, reducing downtime by 25% and maintenance costs by 18% for a manufacturing client.</p>
+            <h3>Android Application Suite</h3>
+            <p>Developed 10+ production Android applications using Java, Kotlin, and MVVM architecture. Implemented scalable features with Jetpack components and RESTful APIs, leading successful app store releases.</p>
             <div class="project-links">
               <a href="#" class="btn">View Details</a>
               <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Customer Segmentation Analysis -->
+        <div class="project-card fade-in delay-4">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Customer Segmentation Analysis">
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">R Programming</span>
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Data Visualization</span>
+            </div>
+            <h3>Customer Segmentation & Behavior Analysis</h3>
+            <p>Applied clustering algorithms and statistical analysis to segment customer base and identify behavioral patterns. Created interactive visualizations to support marketing strategy and customer engagement optimization.</p>
+            <div class="project-links">
+              <a href="#" class="btn">View Details</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Healthcare Data Pipeline -->
+        <div class="project-card fade-in delay-5">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop" alt="Healthcare Data Pipeline">
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">ETL Pipeline</span>
+              <span class="project-tag">Data Modeling</span>
+            </div>
+            <h3>Healthcare Data Integration Pipeline</h3>
+            <p>Designed and implemented ETL pipelines for healthcare data integration, ensuring data quality and compliance. Built star schema data models for efficient analytics and reporting across multiple healthcare systems.</p>
+            <div class="project-links">
+              <a href="#" class="btn">View Details</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Predictive Analytics Model -->
+        <div class="project-card fade-in delay-6">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Predictive Analytics Model">
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Statistical Analysis</span>
+              <span class="project-tag">Data Storytelling</span>
+            </div>
+            <h3>Predictive Maintenance & Risk Assessment</h3>
+            <p>Developed predictive models using time series analysis and statistical modeling to forecast equipment failures and assess operational risks. Delivered actionable insights through comprehensive data storytelling and visualization.</p>
+            <div class="project-links">
+              <a href="#" class="btn">View Details</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
@@ -215,149 +462,169 @@
       <div class="timeline">
         <!-- Experience: Assistant in Nursing -->
         <div class="timeline-item fade-in delay-1">
+          <div class="timeline-date">Sep 2023 – Present</div>
           <div class="timeline-content">
-            <span class="timeline-date">Sep 2023 – Present</span>
             <h3>Assistant in Nursing</h3>
             <h4>
-              <a href="https://www.linkedin.com/company/st-vincents-care-services" target="_blank" rel="noopener">St. Vincent's Care Services</a>, Toowoomba, QLD
+              <a href="https://www.linkedin.com/company/st-vincents-care-services" target="_blank" rel="noopener">St. Vincent's Care Services</a>
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Toowoomba, QLD</span>
             </h4>
             <ul>
-              <li>Provided person-centred care and monitored resident health with accurate daily reporting.</li>
-              <li>Maintained quality health records used in clinical decisions and audits.</li>
-              <li>Built a strong understanding of aged care workflows, data handling, and care coordination.</li>
+              <li>Delivered person-centred care with accurate health monitoring and daily reporting</li>
+              <li>Maintained quality health records for clinical decisions and compliance audits</li>
+              <li>Developed expertise in aged care workflows and data management systems</li>
             </ul>
-            <p><b>Certifications:</b> CHCAGE011 – Dementia Support | Certificate III in Individual Support</p>
-            <h5>Relevant Skills</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Certified</span>
+              <span>CHCAGE011 – Dementia Support | Certificate III in Individual Support</span>
+            </div>
+            <h5>Key Competencies</h5>
             <div class="skills-list">
-              <span class="skill-tag">Communication &amp; Collaboration</span>
-              <span class="skill-tag">Time &amp; Crisis Management</span>
-              <span class="skill-tag">Confidentiality &amp; Accountability</span>
-              <span class="skill-tag">Problem-Solving &amp; Critical Thinking</span>
-              <span class="skill-tag">Integrity &amp; Ethics</span>
-              <span class="skill-tag">Cultural Awareness &amp; Inclusivity</span>
+              <span class="skill-tag">Patient Care</span>
+              <span class="skill-tag">Health Records</span>
+              <span class="skill-tag">Crisis Management</span>
+              <span class="skill-tag">Cultural Sensitivity</span>
             </div>
           </div>
         </div>
+        
         <!-- Experience: Android Developer -->
         <div class="timeline-item fade-in delay-2">
+          <div class="timeline-date">Jul 2020 – Nov 2022</div>
           <div class="timeline-content">
-            <span class="timeline-date">Jul 2020 – Nov 2022</span>
             <h3>Mid-level Android Developer</h3>
             <h4>
-              <a href="https://www.linkedin.com/company/prologicnpl" target="_blank" rel="noopener">Prologic Solutions</a>, Kathmandu, Nepal
+              <a href="https://www.linkedin.com/company/prologicnpl" target="_blank" rel="noopener">Prologic Solutions</a>
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Kathmandu, Nepal</span>
             </h4>
             <ul>
-              <li>Developed and maintained 10+ Android apps using Java, Kotlin, and MVVM/MVP architecture.</li>
-              <li>Built scalable features with Jetpack components like LiveData, ViewModel, Room, and Navigation.</li>
-              <li>Integrated RESTful APIs via Retrofit, managed JSON parsing, and local storage with Room DB.</li>
-              <li>Led Play Store app releases with version control, crash monitoring, and performance tuning.</li>
-              <li>Collaborated in Agile teams using Git, GitHub, and JIRA, with regular pull request reviews.</li>
-              <br>
+              <li>Developed 10+ Android applications using Java, Kotlin, and MVVM architecture</li>
+              <li>Implemented scalable features with Jetpack components and RESTful APIs</li>
+              <li>Led app store releases with version control and performance optimization</li>
+              <li>Collaborated in Agile teams using Git, GitHub, and JIRA workflows</li>
             </ul>
-            <h5>Tools &amp; Technologies</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Delivered</span>
+              <span>10+ Production Apps | 2+ Years Experience</span>
+            </div>
+            <h5>Technical Stack</h5>
             <div class="skills-list">
               <span class="skill-tag">Android Studio</span>
-              <span class="skill-tag">Java &amp; Kotlin</span>
-              <span class="skill-tag">MVVM / MVP</span>
-              <span class="skill-tag">Jetpack (LiveData, ViewModel, Room)</span>
-              <span class="skill-tag">Retrofit &amp; Glide</span>
-              <span class="skill-tag">Coroutines</span>
-              <span class="skill-tag">Dagger</span>
-              <span class="skill-tag">REST APIs / JSON</span>
-              <span class="skill-tag">Git, GitHub, JIRA</span>
+              <span class="skill-tag">Java & Kotlin</span>
+              <span class="skill-tag">MVVM Architecture</span>
+              <span class="skill-tag">Jetpack Components</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Git & JIRA</span>
             </div>
           </div>
         </div>
+        
         <!-- Project: Final Year Project -->
         <div class="timeline-item fade-in delay-3">
+          <div class="timeline-date">Jul 2024 – Nov 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">Jul 2024 – Nov 2024</span>
-            <h3>Final Year Capstone Project</h3>
+            <h3>Healthcare Analytics Capstone Project</h3>
             <h4>
-              <a href="https://www.linkedin.com/school/university-of-southern-queensland" target="_blank" rel="noopener">University of Southern Queensland</a>, Toowoomba, QLD
+              <a href="https://www.linkedin.com/school/university-of-southern-queensland" target="_blank" rel="noopener">University of Southern Queensland</a>
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Toowoomba, QLD</span>
             </h4>
             <ul>
-              <li>Used predictive and prescriptive analytics to explore healthcare fragmentation and social isolation in rural Queensland.</li>
-              <li>Collected and integrated data from 15+ public sources, including LGA, MMM, ABS, RACF, and NDIS datasets, to support geospatial and population health analysis.</li>
-              <li>Applied Python and Power BI to identify service gaps and population clusters.</li>
-              <li>Presented actionable insights and resource allocation strategies to improve rural healthcare access.</li>
+              <li>Applied predictive analytics to identify healthcare service gaps in rural Queensland</li>
+              <li>Integrated 15+ public datasets for geospatial and population health analysis</li>
+              <li>Developed actionable insights for resource allocation and service improvement</li>
+              <li>Presented findings to stakeholders for healthcare access optimization</li>
             </ul>
-            <br>
-            <h5>Tools &amp; Technologies</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Research</span>
+              <span>15+ Datasets Analyzed | Rural Healthcare Focus</span>
+            </div>
+            <h5>Analytics Tools</h5>
             <div class="skills-list">
-              <span class="skill-tag">Python (Pandas, Scikit-learn)</span>
+              <span class="skill-tag">Python</span>
               <span class="skill-tag">Power BI</span>
-              <span class="skill-tag">Excel</span>
-              <span class="skill-tag">EDA &amp; Geospatial Mapping</span>
-              <span class="skill-tag">Regression Analysis</span>
-              <span class="skill-tag">K-Means Clustering</span>
-              <span class="skill-tag">Time Series Forecasting</span>
-              <span class="skill-tag">Descriptive Statistics</span>
+              <span class="skill-tag">Statistical Analysis</span>
+              <span class="skill-tag">Geospatial Mapping</span>
+              <span class="skill-tag">Predictive Modeling</span>
             </div>
           </div>
         </div>
+
         <!-- Project: Data Analytics Intern -->
         <div class="timeline-item fade-in delay-4">
+          <div class="timeline-date">Feb 2024 – Apr 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">Feb 2024 – Apr 2024</span>
-            <h3>Data Analytics Intern</h3>
-            <h4>TGM Capital – Virtual UniSQ Industry Project</h4>
+            <h3>Financial Analytics Intern</h3>
+            <h4>
+              TGM Capital – Virtual UniSQ Industry Project
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Virtual Project</span>
+            </h4>
             <ul>
-              <li>Developed a financial analytics dashboard in Power BI by integrating datasets through custom ETL pipelines using Python (Pandas, SQLAlchemy) and Azure SQL Database.</li>
-              <li>Performed data cleansing, transformation, and modeling using a star schema approach.</li>
-              <li>Analyzed RBA event impact and applied time series forecasting in R to predict market behavior.</li>
-              <li>Delivered insights to support investment strategy and macroeconomic risk assessment.</li>
+              <li>Built financial analytics dashboard using Power BI and custom ETL pipelines</li>
+              <li>Performed data modeling with star schema and time series forecasting</li>
+              <li>Analyzed RBA event impacts on market behavior predictions</li>
+              <li>Delivered investment strategy insights and risk assessment reports</li>
             </ul>
-            <br>
-            <h5>Tools &amp; Technologies</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Industry</span>
+              <span>Financial Analytics | ETL Pipeline Development</span>
+            </div>
+            <h5>Data Tools</h5>
             <div class="skills-list">
               <span class="skill-tag">Power BI</span>
-              <span class="skill-tag">Python (Pandas, Scikit-learn)</span>
-              <span class="skill-tag">Excel</span>
-              <span class="skill-tag">Power Query</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Azure SQL</span>
+              <span class="skill-tag">ETL Pipelines</span>
               <span class="skill-tag">Time Series Analysis</span>
             </div>
           </div>
         </div>
-        <!-- Education: Master’s Degree -->
+
+        <!-- Education: Master's Degree -->
         <div class="timeline-item fade-in delay-5">
+          <div class="timeline-date">Graduated Dec 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">Graduated Dec 2024</span>
-            <h3>Master of Data Science (Business Analytics) <span class="gpa">(GPA: 5.88 / 7.0)</span></h3>
+            <h3>Master of Data Science (Business Analytics) <span class="gpa">(GPA: 5.88/7.0)</span></h3>
             <h4>
-              <a href="https://www.linkedin.com/school/university-of-southern-queensland" target="_blank" rel="noopener">University of Southern Queensland</a>, Toowoomba, QLD
+              <a href="https://www.linkedin.com/school/university-of-southern-queensland" target="_blank" rel="noopener">University of Southern Queensland</a>
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Toowoomba, QLD</span>
             </h4>
-            <h5>Relevant Courses</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Distinction</span>
+              <span>Business Analytics Focus | Advanced Statistical Methods</span>
+            </div>
+            <h5>Core Curriculum</h5>
             <div class="skills-list">
               <span class="skill-tag">Data Mining</span>
-              <span class="skill-tag">Applied Analytics</span>
               <span class="skill-tag">Machine Learning</span>
-              <span class="skill-tag">Big Data Visualization</span>
               <span class="skill-tag">Business Intelligence</span>
-              <span class="skill-tag">Cloud Security</span>
-              <span class="skill-tag">Statistics for Quant Research</span>
-              <span class="skill-tag">Multivariate Analysis</span>
-              <span class="skill-tag">ICT Project Management</span>
+              <span class="skill-tag">Statistical Analysis</span>
+              <span class="skill-tag">Big Data Visualization</span>
+              <span class="skill-tag">Project Management</span>
             </div>
           </div>
         </div>
-        <!-- Education: Bachelor’s Degree -->
+
+        <!-- Education: Bachelor's Degree -->
         <div class="timeline-item fade-in delay-6">
+          <div class="timeline-date">Graduated Jul 2021</div>
           <div class="timeline-content">
-            <span class="timeline-date">Graduated Jul 2021</span>
-            <h3>Bachelor of Computer Science (Hons.) <span class="gpa">(GPA: 3.03 / 4.00)</span></h3>
+            <h3>Bachelor of Computer Science (Hons.) <span class="gpa">(GPA: 3.03/4.0)</span></h3>
             <h4>
-              <a href="https://www.linkedin.com/school/sunwaycollegektm" target="_blank" rel="noopener">Sunway International Business School (IUKL Affiliated)</a>, Kathmandu, Nepal
+              <a href="https://www.linkedin.com/school/sunwaycollegektm" target="_blank" rel="noopener">Sunway International Business School (IUKL Affiliated)</a>
+              <span class="location"><i class="fas fa-map-marker-alt"></i>Kathmandu, Nepal</span>
             </h4>
-            <h5>Relevant Courses</h5>
+            <div class="achievement-highlight">
+              <span class="achievement-badge">Honors</span>
+              <span>Software Development Foundation | Programming Fundamentals</span>
+            </div>
+            <h5>Key Subjects</h5>
             <div class="skills-list">
-              <span class="skill-tag">Internet Programming</span>
+              <span class="skill-tag">Programming</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Web Development</span>
               <span class="skill-tag">Mobile Programming</span>
-              <span class="skill-tag">Open Source Development</span>
-              <span class="skill-tag">Object-Oriented Programming</span>
-              <span class="skill-tag">Data Structures &amp; Algorithms</span>
               <span class="skill-tag">Artificial Intelligence</span>
-              <span class="skill-tag">Data Communication &amp; Networking</span>
+              <span class="skill-tag">Networking</span>
             </div>
           </div>
         </div>
@@ -372,31 +639,46 @@
     <div class="container">
       <h2 class="section-title fade-in">Awards &amp; Certificates</h2>
       <div class="cert-images fade-in">
-        <!-- In-progress Certificate -->
-        <figure class="cert-item fade-in in-progress">
-          <div class="cert-placeholder">
-            Google Data Analytics Professional Certificate
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
+        <!-- Google Data Analytics Certificate -->
+        <figure class="cert-item fade-in">
+          <div class="cert-image-wrapper">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/AD7EC3G9TOUC" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="images/rudra google data analytics certificate.png"
+                alt="Google Data Analytics Specialization"
+                class="cert-image"
+                loading="lazy"
+              >
+            </a>
+            <div class="cert-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
           </div>
           <figcaption>
-            Google Data Analytics Professional Certificate
-            <span class="badge">In progress</span>
+            <h4>Google Data Analytics Specialization</h4>
+            <p class="cert-issuer">Google</p>
           </figcaption>
         </figure>
+        
         <!-- Dementia Certificate -->
         <figure class="cert-item fade-in">
-          <a href="images/certificate of dementia.png" target="_blank" rel="noopener noreferrer">
-            <img 
-            src="images/certificate of dementia.png"
-            alt="Certificate of Dementia Support"
-            class="cert-image"
-            width="350" height="350"
-            loading="lazy"
+          <div class="cert-image-wrapper">
+            <a href="images/certificate of dementia.png" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="images/certificate of dementia.png"
+                alt="Certificate of Dementia Support"
+                class="cert-image"
+                loading="lazy"
               >
-          </a>
-          <figcaption>Provide support to people living with dementia</figcaption>
+            </a>
+            <div class="cert-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <figcaption>
+            <h4>Dementia Support Certificate</h4>
+            <p class="cert-issuer">Australian Government</p>
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -406,31 +688,53 @@
        Contact Section
        ========================= -->
   <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title fade-in">Get In Touch</h2>
-      <div class="contact-form fade-in">
-       <form id="contactForm" autocomplete="off">
-      <div class="form-group">
-        <label for="contact-name">Your Name</label>
-        <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <label for="contact-email">Your Email</label>
-        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <label for="contact-subject">Subject</label>
-        <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject">
-      </div>
-      <div class="form-group">
-        <label for="contact-message">Your Message</label>
-        <textarea class="form-control" id="contact-message" name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send Message</button>
+  <div class="container">
+    <h2 class="section-title fade-in">Let's Connect</h2>
+    <div class="contact-form fade-in">
+      <form id="contactForm" autocomplete="off">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input 
+            type="text" 
+            class="form-control" 
+            id="contact-name" 
+            name="name" 
+            placeholder="Your name"
+            required
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            id="contact-email" 
+            name="email" 
+            placeholder="Your email address"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea 
+            class="form-control" 
+            id="contact-message" 
+            name="message" 
+            placeholder="What would you like to discuss?"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span>Start a Conversation</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </form>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 </main>
   <!-- =========================
        Footer
@@ -438,21 +742,34 @@
   <footer>
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2025 Rudra Rokaya. All rights reserved.</p>
-        <div class="social-links" aria-label="Footer Social Links">
-          <a href="https://www.linkedin.com/in/rudra-rokaya" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Rudrarokaya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:rudra.rokaya77@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/rudra-rokaya" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Rudrarokaya" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.kaggle.com/xrudrarx" target="_blank" rel="noopener" aria-label="Kaggle" class="social-link">
+              <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="mailto:rudra.rokaya77@gmail.com" aria-label="Email" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          
+          <div class="footer-copyright">
+            <p>&copy; 2025 Rudra Rokaya. All rights reserved.</p>
+            <p class="footer-location">📍 Based in Toowoomba, QLD, Australia</p>
+          </div>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- =========================
-       Scroll-to-top Button & Dark Mode Toggle
+       Dark Mode Toggle
        ========================= -->
-  <button id="scrollTopBtn" title="Back to top" aria-label="Back to top">↑</button>
   <div class="theme-switch" aria-label="Toggle dark mode">
     <i class="fas fa-moon"></i>
   </div>
