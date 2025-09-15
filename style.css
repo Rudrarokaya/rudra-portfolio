@@ -1665,6 +1665,47 @@ footer::before {
 /* Mobile Skills List */
 .skills-list-mobile {
   display: none;
+  padding: 2rem 1rem;
+}
+
+/* Mobile Skills Styling - Consistent with Desktop */
+.skills-list-mobile .skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.skills-list-mobile .skill-pill {
+  background: var(--background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.skills-list-mobile .skill-pill:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Dark mode for mobile skills */
+.dark-mode .skills-list-mobile .skill-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.dark-mode .skills-list-mobile .skill-pill:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 /* Dark mode adjustments */
@@ -1756,6 +1797,12 @@ body.dark-mode .skill-tag,
 body.dark-mode .project-tag {
   background: #333;
   color: #eee;
+}
+
+/* Fix for skills section text color in dark mode */
+body.dark-mode #skills .skill-pill,
+body.dark-mode #skills .skill-tag {
+  color: #fff;
 }
 
 /* =========================
@@ -1862,8 +1909,13 @@ body.dark-mode .project-tag {
   .projects-grid { grid-template-columns: 1fr; }
   
   /* Skills mobile adjustments */
-  .skills-container { display: none !important; }
-  .skills-list-mobile { display: block !important; }
+  .skills-container { 
+    display: none !important; 
+  }
+  .skills-list-mobile { 
+    display: block !important; 
+    padding: 1rem;
+  }
   
   .skills-category {
     margin-bottom: 2rem;
@@ -2441,11 +2493,6 @@ body.dark-mode .project-tag {
     color: var(--primary-color);
     background: none;
   }
-}
-
-/* Hide skills-pills on mobile, show only on desktop */
-@media (max-width: 768px) {
-  .skills-pills { display: none !important; }
 }
 
 /* Removing background from the View Details button and creating a cleaner look */
